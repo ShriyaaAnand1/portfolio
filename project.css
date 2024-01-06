@@ -1,0 +1,66 @@
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    overflow: hidden; /* Ensure the content doesn't overflow */
+}
+
+.project {
+    width: 30%;
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Ensure the content doesn't overflow */
+    animation: moveRight 5s linear forwards; /* Adjust the duration as needed */
+}
+
+.project img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.project h2 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0); /* Starting position */
+    }
+    to {
+        transform: translateX(calc(100vw - 100%)); /* Ending position */
+    }
+}
+
+@keyframes moveBack {
+    from {
+        transform: translateX(calc(100vw - 100%)); /* Starting position */
+    }
+    to {
+        transform: translateX(0); /* Ending position */
+    }
+}
+
+/* Responsive adjustments for tablets */
+@media only screen and (max-width: 768px) {
+    .project {
+        width: 48%;
+    }
+}
+
+/* Responsive adjustments for phones */
+@media only screen and (max-width: 600px) {
+    .project {
+        width: 100%;
+    }
+}
+
+.projects-container:hover .project {
+    animation: moveBack 5s linear forwards; /* Adjust the duration as needed */
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="project.css">
+    <title>Shriyaa</title>
+    <script src="project.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="activities.html">Extra Curricular Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="projects-container">
+        <!-- Video Projects -->
+        <div class="project" onclick="openProject('si_video.mp4', 'si.jpeg')">
+            <img src="si.jpeg" height="700rem" alt="Video 1 Thumbnail">
+            <h2>Video 1</h2>
+        </div>
+
+        <div class="project" onclick="openProject('dsca_video.mp4', 'dsca.jpeg')">
+            <img src="dsca.jpeg" height="700rem" alt="Video 2 Thumbnail">
+            <h2>Video 2</h2>
+        </div>
+
+        <!-- <div class="project" onclick="openProject('pic5.jpeg')">
+            <img src="pic5.jpeg" alt="Image 3 Thumbnail">
+            <h2>Image 3</h2>
+        </div> -->
+
+
+        <!-- Document Projects -->
+        <div class="project" onclick="openProject('Final_Project_PPT.pdf', 'final_ppt.png')">
+            <img src="final_ppt.png" height="700rem" alt="Document 1 Thumbnail">
+            <h2>Document 1</h2>
+        </div>
+        <div class="projects-container">
+            <div class="project" onclick="openProject('THE CHERNOBYL DISASTER.pdf', 'chernobyl.png')">
+                <img id="movingImage" src="chernobyl.png" height="700rem" alt="Document 2 Thumbnail">
+                <h2>Document 2</h2>
+            </div>
+        </div>
+        
+
+
+        <div class="project" onclick="openProject('ASSESSMENT-6.pdf', 'assessment.png')">
+            <img src="assessment.png" height="700rem" alt="Document 3 Thumbnail">
+            <h2>Document 3</h2>
+        </div>
+    </div>
+
+    <div id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <button onclick="closeWithButton()">Close</button>
+            <iframe id="project-iframe" width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2024 Shriyaa Anand</p>
+    </footer>
+    
+
+</body>
+</html>

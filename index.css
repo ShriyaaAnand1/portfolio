@@ -1,0 +1,42 @@
+#image-index img {
+    height: 100%; /* Set the height to 100% to fill the container */
+    width: 100%; /* Set the width to 100% for responsiveness */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+#image-index {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 500px; /* Set a fixed height for the container */
+}
+
+#text{
+    max-width: 800px; /* Adjust the maximum width as per your design */
+    margin: 50px auto;
+    text-align: center;
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+
+}
+
+@keyframes carousel {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 120% {
+        transform: translateX(-100%);
+    }
+    40%, 140% {
+        transform: translateX(-200%);
+    }
+    60%, 160% {
+        transform: translateX(-300%);
+    }
+    80%, 180% {
+        transform: translateX(-400%);
+    }
+}

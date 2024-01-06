@@ -1,0 +1,248 @@
+#image-index {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-index img {
+    margin-top: 1rem;
+    padding-top: 50px;
+    height: 600px;
+    width: 1000px;
+    object-fit: cover;
+    margin-left: 1rem;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: red;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav {
+    background: linear-gradient(to right, #333, #000);
+    color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.5);
+    border-radius: 1.875rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 1.125rem;
+    padding: 1.25rem 1.5625rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+#home {
+    position: relative;
+    padding: 2.5rem;
+    text-align: center;
+    background: black;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.5);
+    border-radius: 1.875rem;
+    color: #fff;
+}
+
+#text {
+    max-width: 50rem;
+    margin: 3.125rem auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#home:hover {
+    transform: translateY(-0.3125rem);
+}
+
+footer {
+    background-color: black;
+    color: red;
+    text-align: center;
+    padding: 2.5rem;
+    box-shadow: 0 -0.3125rem 0.9375rem rgba(0, 0, 0, 0.5);
+    border-radius: 1.875rem;
+}
+
+footer:hover {
+    transform: translateY(0.3125rem);
+}
+
+#about {
+    padding: 2.5rem;
+    text-align: center;
+    font-size: x-large;
+    color: red;
+}
+
+.profile {
+    display: flex;
+    max-width: 62.5rem;
+    margin: 0 auto;
+}
+
+.image-box {
+    flex: 1;
+    margin-right: 2.5rem;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
+.text-box {
+    flex: 1;
+}
+
+.text-box h1 {
+    text-align: left;
+    margin-bottom: 1.25rem;
+}
+
+.icon{
+    display: flex;
+}
+.choice {
+    margin-top: 1.25rem;
+    display: flex;
+}
+
+.choice button {
+    margin-right: 1.25rem;
+    padding: 1.875rem 3.125rem;
+    background-color: transparent;
+    color: red;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.choice button:hover {
+    color: red;
+}
+
+.choice button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.125rem;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.choice button:hover:after {
+    transform: scaleX(1);
+}
+
+.info-section {
+    display: none;
+    padding: 1.25rem;
+    background-color: black;
+    color: red;
+    border-radius: 0.625rem;
+    margin-top: 1.25rem;
+}
+
+.info-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.section-box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Add additional styles as needed */
+
+
+
+@media only screen and (max-width: 768px) {
+    .service-item {
+        flex: 0 0 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for phones */
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .text-box {
+        text-align: center;
+    }
+
+    .choice button {
+        padding: 1rem 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+

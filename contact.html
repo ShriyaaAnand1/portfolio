@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="common.css">
+    <title>Shriyaa</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="activities.html">Extra Curricular Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="contact" class="contact py">
+        <div class="container grid contact-content">
+            <div class="contact-left">
+                <img src="resume-pic (1).jpeg" alt="Profile Picture" class="contact-image">
+            </div>
+            <div class="contact-right">
+                <div class="contact-head">
+                    <h3 class="lead"><b><i>Contact Me!!!</i></b></h3>
+                    <p class="text text-md"><b><font-color="red"><If you like my resume and are interested in working with me in any sense, kindly drop your details. I would love to contact you!/font-color></If></b></p>
+                </div>
+                <form id="registrationForm">
+                    <div class="form-element">
+                        <input type="text" class="form-control" placeholder="Your name" id="fname">
+                    </div>
+                    <div class="form-element">
+                        <input type="email" class="form-control" placeholder="Your email" id="email">
+                    </div>
+                    <div class="form-element">
+                        <textarea rows="5" placeholder="Your Message" class="form-control" id="additionalInfo"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-white btn-submit">
+                        <i class="fas fa-arrow-right"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the default form submission
+
+            var firstName = document.getElementById('fname').value;
+            var email = document.getElementById('email').value;
+            var additionalInfo = document.getElementById('additionalInfo').value;
+
+            var registeredInfo = `Registered!\n
+                Name: ${firstName}\n
+                Email: ${email}\n
+                Additional Information: ${additionalInfo}`;
+
+            alert(registeredInfo);
+
+            this.submit();
+        });
+    </script>
+</body>
+</html>
+
+
+<footer>
+    <div class="social-media-links">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/shriyaa-a-b1106a298/" target="_blank">LinkedIn</a>
+    </div>
+    <p>&copy; 2024 Your Name</p>
+</footer>
+    
+
+</body>
+</html>
